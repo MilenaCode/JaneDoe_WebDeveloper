@@ -1,1 +1,171 @@
-h1{color:red;}
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:wght@100;700&family=Playfair+Display&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+body{
+  font-family: 'Montserrat', sans-serif;
+  position:relative;
+  color:#000;
+  /* font-family: 'GFS Didot', serif; */
+  }
+
+  a{color:#000;
+  text-decoration: none;}
+  
+  /* The Overlay (background) */
+.overlay {
+    /* Height set as 0 for navigation  to slide from the top*/   
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(255,255,0.5); /* Black fallback color */
+    background-color: rgba(255,255,255, 0.5); /* White w/opacity */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/overlay.jpg");
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 400;
+    color: #000;
+    display: block; /* Display block instead of inline */
+    transition:border 1s 3s ease-in-out , all 1s 0s ease-out; /* Transition effects on hover (color) */
+    width:50%; /*underline width */
+    margin:0 auto;
+    
+  }
+
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #010101;
+    border-bottom:3px double #000;
+    border-radius: 5px;
+    transform: scale(1.2rem);
+    font-weight: 600;
+  }
+  
+  
+  /* Position the toggle button (top right corner) */
+  .togglebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 60px;
+    cursor:pointer;
+    z-index:999;
+   
+  }
+
+   a#logo{
+    font-family: 'GFS Didot', serif;
+    background-color:#000;
+    color:#fff;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    border:5px double #fff;
+    height: 80px;
+    width:100px;
+    font-weight:bold;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    text-decoration: none;
+    cursor:pointer
+    
+   }
+
+   a#logo .logo-components{
+   
+    font-style: italic;
+    font-size:.5rem;
+    transform:translate(-.2em);
+
+   }
+
+   a#logo #logo-initials {
+    text-transform: uppercase;
+    font-size:200%
+    }
+
+  a#logo #brackets {
+    font-size:80%;
+   
+  }
+
+
+  
+
+  .menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+  }
+  .menu-btn__burger {
+    width: 60px;
+    height: 6px;
+    background: #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 6px;
+    background: #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-16px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(16px);
+  }
+  /* ANIMATION */
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+      transform: rotate(-45deg) translate(35px, 35px);}
