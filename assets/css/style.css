@@ -89,7 +89,7 @@ body{
     font-family: 'GFS Didot', serif;
     background-color:#000;
     color:#fff;
-    position: absolute;
+    position: relative;
     top: 5px;
     left: 0;
     border:5px double #fff;
@@ -178,7 +178,7 @@ body{
 
       .hero-image {
         position:relative;
-        top:90px; /* accomodating logo height */
+        top:10px; /* accomodating logo height */
         /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
         background-image: linear-gradient(rgba(255, 255, 255,0.4), rgba(255, 255, 255, 0.4)), url("../images/hero_lg.jpg");
       
@@ -211,3 +211,37 @@ body{
       .hero-text h2{ font-family: 'GFS Didot', serif;
       font-weight:200;
     font-style:italic; }    
+
+    /* cards section */
+ .section{padding-top:90px;}
+
+ .section-headings{
+    color:#000;
+    width:100%;
+    text-align:center;}
+  
+  #services {
+    background-image: url('../images/cards_lg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  #services div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 300px;
+    float: left;
+    padding: 30px 0 0 10px;
+    text-align: center;
+    border: 2px solid white;
+    box-sizing: border-box;
+  }
+  
+  #services h2 {
+    color: #fafafa;
+  }
+  
