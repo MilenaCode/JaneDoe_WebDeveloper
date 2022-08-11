@@ -5,6 +5,10 @@
     box-sizing: border-box;
     
   }
+
+  html {
+    scroll-behavior: smooth;
+  }  
   
 body{
   font-family: 'Montserrat', sans-serif;
@@ -121,14 +125,15 @@ body{
 
 
   
-
+  /* container for menu to allow for height value and horizontal align */
   .menu-btn {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    /* match logo height and width including padding and margin*/
+    width: 100px; 
+    height: 90px;
     cursor: pointer;
     transition: all .5s ease-in-out;
 
@@ -169,3 +174,40 @@ body{
   }
   .menu-btn.open .menu-btn__burger::after {
       transform: rotate(-45deg) translate(35px, 35px);}
+
+
+      .hero-image {
+        position:relative;
+        top:90px; /* accomodating logo height */
+        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+        background-image: linear-gradient(rgba(255, 255, 255,0.4), rgba(255, 255, 255, 0.4)), url("../images/hero_lg.jpg");
+      
+        /* Set a specific height */
+        height: calc(100vh - 90px);
+      
+        /* Position and center the image to scale nicely on all screens */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      
+      /* Place text in the middle of the image */
+      .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      
+
+      }   
+      .hero-text h1{font-size: 500%;} 
+
+      .hero-text #fname{ font-weight:600;}
+      .hero-text #lname{font-weight:200;}
+      .hero-text a{color:#000; font-size:500%;}
+
+      .hero-text h2{ font-family: 'GFS Didot', serif;
+      font-weight:200;
+    font-style:italic; }    
