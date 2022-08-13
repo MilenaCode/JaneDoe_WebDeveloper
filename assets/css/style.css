@@ -266,11 +266,9 @@ body{
   
   
     @media screen and (min-width:768px){
-  
+      #services {display:flex;}
       #services div {
-       
-        width: 33%;
-        
-      }
+        flex-grow: 1;
+        }
   
     }
