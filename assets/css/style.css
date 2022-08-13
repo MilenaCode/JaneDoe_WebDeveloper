@@ -14,6 +14,10 @@ body{
   font-family: 'Montserrat', sans-serif;
   position:relative;
   color:#000;
+  /* set min height for pages with little content minus the footer height */
+  min-height:calc(100vh - 150px);
+  /* footer height padding */
+  padding-bottom:150px; 
   /* font-family: 'GFS Didot', serif; */
   }
 
@@ -246,17 +250,25 @@ body{
   }
   
   footer {
-    position:relative;
+    position:absolute;
     bottom:0;
     width:100%;
-    text-align:center;
-    padding:20px 0;
+    height:150px;
+    text-align: center;
   }
-  
+  /* position footer content */
+  .footer-wrap {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
   footer ul{
   
   list-style-type: none;
   display:inline-block;
+
   }
   footer ul li{float:left; padding: 0 16px; border-right:.5px solid #000;}
   footer ul li a{text-decoration:none; color:#000;}
