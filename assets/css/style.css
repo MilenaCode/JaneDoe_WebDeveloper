@@ -245,3 +245,32 @@ body{
     color: #fafafa;
   }
   
+  footer {
+    position:absolute;
+    margin-top:200px;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    padding-bottom:20px;
+  }
+  
+  footer ul{
+  
+  list-style-type: none;
+  display:inline-block;
+  }
+  footer ul li{float:left; padding: 0 16px; border-right:.5px solid #000;}
+  footer ul li a{text-decoration:none; color:#000;}
+  footer ul li:first-child {padding-left:0;}
+  footer ul li:last-child {border:none; padding-right: none;}
+  
+  
+    @media screen and (min-width:768px){
+  
+      #services div {
+       
+        width: 33%;
+        
+      }
+  
+    }
