@@ -183,7 +183,7 @@ body{
 
       .hero-image {
         position:relative;
-        top:10px; /* accomodating logo height */
+        top:10px;
         /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
         background-image: linear-gradient(rgba(255, 255, 255,0.4), rgba(255, 255, 255, 0.4)), url("../images/hero_lg.jpg");
       
@@ -298,6 +298,26 @@ body{
     background-color: #555;
   }
   
+/* social media icons */
+  .container-social{
+    position: fixed;
+    right:0; top:90px;
+    width:80px;
+    /* set the height equal to hero image height */
+    height:calc(100vh - 90px);
+    
+
+  }
+ 
+ .content-social{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);}
+
+  .fa-linkedin{margin-bottom:20px}
+
+
   
     @media screen and (min-width:768px){
       #services {display:flex;}
