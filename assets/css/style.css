@@ -274,7 +274,7 @@ body{
   footer ul li{float:left; padding: 0 16px; border-right:.5px solid #000;}
   footer ul li a{text-decoration:none; color:#000;}
   footer ul li:first-child {padding-left:0;}
-  footer ul li:last-child {border:none; padding-right: none;}
+  footer ul li:last-child {border:none; padding-right:0;}
 /* scroll button to top of the page */
   #topBtn {
     opacity:0;
