@@ -14,11 +14,13 @@ body{
   font-family: 'Montserrat', sans-serif;
   position:relative;
   color:#000;
-  /* set min height for pages with little content minus the footer height */
-  min-height:calc(100vh - 150px);
+  
+  /* set min height for short pages only */
+  /* min-height:100vh; */
   /* footer height padding */
-  padding-bottom:150px; 
+  padding-bottom: 150px;
   /* font-family: 'GFS Didot', serif; */
+  
   }
 
   a{color:#000;
@@ -42,7 +44,7 @@ body{
     background-size: cover;
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
+  z-index:2;}
   
   /* Position the content inside the overlay */
   .overlay-content {
@@ -257,6 +259,7 @@ body{
     height:150px;
     text-align: center;
     font-size:70%;
+    clear:both;
   }
   /* position footer content */
   .footer-wrap {
@@ -359,6 +362,19 @@ body{
     text-align: justify;
    
     }
+
+  #portfolio-section{ position:relative; top:10px;overflow: hidden;}
+.portfolio-img{
+  width: 100%;
+height: calc(50vh - 140px);
+background-image: url("../images/about_md.jpg"),linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5));
+    background-blend-mode:overlay;
+    background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+}
+  .porfolio-overlay-text{line-height:calc(50vh - 140px); text-align:center;}
+
   
   
   
@@ -367,7 +383,7 @@ body{
 
   
     @media screen and (min-width:768px){
-
+      
       /* services desktop */
       #services {display:flex;}
       #services div {
@@ -404,7 +420,18 @@ body{
           text-align: justify;
          
           }
+         
+          .portfolio-img{
+            width: 50%;
+          height: calc(50vh - 140px);
+          float:left;
+          background-image: url("../images/about_md.jpg"),linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5));
+              background-blend-mode:overlay;
+              background-position: center;
+                 background-repeat: no-repeat;
+                 background-size: cover;
+          }
         
-        
+            footer{clear:both;}     
   
     }
