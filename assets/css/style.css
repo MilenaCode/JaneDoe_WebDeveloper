@@ -363,7 +363,8 @@ body{
    
     }
 
-  #portfolio-section{ position:relative; top:10px; }
+  #portfolio-section{ position:relative; top:10px; overflow: hidden; }
+.portfolio-wrap{overflow: hidden; height: calc(70vh - 140px);width: 100%;}
 .portfolio-img{
 width: 100%;
 height: calc(70vh - 140px);
@@ -441,16 +442,12 @@ height: calc(70vh - 140px);
           text-align: justify;
          
           }
-         
+          .portfolio-wrap{width: 50%;float:left;}
           .portfolio-img{
-            width: 50%;
+            width: 100%;
   
-          float:left;
-          background-image: url("../images/about_md.jpg"),linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5));
-              background-blend-mode:overlay;
-              background-position: center;
-                 background-repeat: no-repeat;
-                 background-size: cover;
+          
+    
           }
         
             footer{clear:both;}     
