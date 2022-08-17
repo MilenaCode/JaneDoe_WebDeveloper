@@ -363,17 +363,38 @@ body{
    
     }
 
-  #portfolio-section{ position:relative; top:10px;overflow: hidden;}
+  #portfolio-section{ position:relative; top:10px; }
 .portfolio-img{
-  width: 100%;
-height: calc(50vh - 140px);
-background-image: url("../images/about_md.jpg"),linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5));
+width: 100%;
+height: calc(70vh - 140px);
+
     background-blend-mode:overlay;
     background-position: center;
        background-repeat: no-repeat;
        background-size: cover;
+       border:2px solid #555;
+       transition: all 2s ease-in-out;
+       
+      
+    
 }
-  .porfolio-overlay-text{line-height:calc(50vh - 140px); text-align:center;}
+
+
+#greyscale{background-image: url("../images/portfolio/greyscale.png"),linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5));}
+#greyscale:hover, #greyscale:focus{background-image: url("../images/portfolio/greyscale.png"); transform:scale(1.1);    }
+#portfolio{background-image: url("../images/portfolio/portfolio.png"),linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5));}
+#portfolio:hover, #portfolio:focus{background-image: url("../images/portfolio/portfolio.png"); transform:scale(1.1);}
+#freelancer{background-image: url("../images/portfolio/freelancer.png"),linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5));}
+#freelancer:hover, #freelancer:focus{background-image: url("../images/portfolio/freelancer.png"); transform:scale(1.1);}
+#salon{background-image: url("../images/portfolio/salon.png"),linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5));}
+#salon:hover, #salon:focus{background-image: url("../images/portfolio/salon.png"); transform:scale(1.1);}
+#resume{background-image: url("../images/portfolio/resume.png"),linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5));}
+#resume:hover, #resume:focus{background-image: url("../images/portfolio/resume.png");transform:scale(1.1);}
+#comming-soon{background-image: url("../images/portfolio/comming_soon_sm.jpg"),linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5));}
+#comming-soon:hover,#comming-soon:focus{background-image: url("../images/portfolio/comming_soon_sm.jpg");transform:scale(1.1);}
+
+.porfolio-overlay-text{line-height:calc(70vh - 140px); text-align:center;}
+.porfolio-overlay-text:hover{opacity:0;}
 
   
   
@@ -423,7 +444,7 @@ background-image: url("../images/about_md.jpg"),linear-gradient(rgba(255,255,255
          
           .portfolio-img{
             width: 50%;
-          height: calc(50vh - 140px);
+  
           float:left;
           background-image: url("../images/about_md.jpg"),linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5));
               background-blend-mode:overlay;
