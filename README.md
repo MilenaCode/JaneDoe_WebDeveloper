@@ -1,108 +1,74 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+#Jane Doe Web: Design Development & Maintenance 
+ Is a freelancer web portfolio. Jane Doe hopes to establish her online presence and attract potential customers by displaying custom made web templates. Web site clearly specifies all the required information and services for the clients i.e. customization option and how to reach out for more prize quote. 
 
-Welcome MilenaCode,
+Site targets customers with low budget/startups, who do not require fully custom-made design, but in a same time they would welcome help with color scheme, font choice, basic SEO etc. Site itself should serve as advertisement tool by displaying clean minimalistic design. Also, it is simple and intuitive to use with not technically savvy client in mind.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+##Existing features
+###Navigation Hamburger menu with custom made logo
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![top navigation screenshot](http://url/to/img.png)
+![top navigation screenshot](http://url/to/img.png)
+Featured on all four pages, the full responsive navigation hamburger menu expands into full navigation when hamburger icon is clicked. Navigation also includes Services link, which is a section of home page.  
 
-## Gitpod Reminders
+Another part of navigation bar is custom coded simple logo.  Section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+###Scroll smoothly to Services section
+Used scroll down feature from within hero image section and it is intuitively marked using arrow down icon.   
 
-`python3 -m http.server`
+###Scroll smoothly to top 
+ 
+This featured button allows easy navigation within same page and brings user back to the top. Smooth scroll is implemented for this feature.
 
-A blue button should appear to click: _Make Public_,
+###Hamburger  menu Animation 
+Design choice to improve user experience.
 
-Another blue button should appear to click: _Open Browser_.
+###The landing page image 
+The landing includes a photograph of a Developer to help user to imagine person behind all the templates. Image is visually appealing showing Jane coding. I used background image for expanded mobile navigation showing coder from different angle 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+###Services section
+Provides further details about services Jane is providing , highlights main pros to opt out for this options as low budget, quick servise and clarity what choice of customisations users have.
 
-A blue button should appear to click: _Make Public_,
+###About page 
+Section outlines image of Jane on the left and text on the right. To accommodate for longer conntent I allowed for vertical scrolling feature as for design to be consistent it required equal height of the image and text area. Users can build trust by getting more information about coder.
 
-Another blue button should appear to click: _Open Browser_.
+###Portfolio page 
+I got inspired by Love running landing page and I kept size scaling element hidden of hover. Applied nice transition to iprove user experience. All links opens i sepearate page, so user is not redirected.
+lso faded gradient overlay on  background images to give user clearer preview  before the click. All links are leading to live websites coded in the past.
+ 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+###Contact page 
+I kept it simple not to distract user with anything else, but writing the message.  I included select element to let user to choose from templates. 
 
-To log into the Heroku toolbelt CLI:
+###Floating social media 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Social media are at the fixed position, constantly appearing  on the right hand site of the page and they are valueable source for further research if clients are interested.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+###Footer 
+The footer section includes links to all the pages. I thought this will improve page menu accessibility as my navigation is not sticky , but sits at the top and also requires expansion.  
 
-------
+##Testing
+##Validator testing
+W3C Validator Passed
+Contact form validates inputs
+All links are working
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+##Unfixed bugs
+Active class does not add on scroll.
+Contact page does not redirect to 
+##Deployment
+Linke to live website: ![Jane Doe Web:Development Design Maintenance](https://milenacode.github.io/JaneDoe_WebDeveloper/index.html)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+##Credits
+My images are sources from ![Pexels](https://www.pexels.com)
+My icons are courced from ![Online Web Fonts]( https://www.onlinewebfonts.com/icon/search?q=web+design) and I also used [Font Awesome]( https://fontawesome.com/).
+My code for Services and Contact section have been copied  and customised from Love running project ![Love Running](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode)
+I have used YouTube tutorial to create Hamburger animation ![YouTube](https://www.youtube.com/watch?v=dIyVTjJAkLw&ab_channel=codeSTACKr)
+And I used W3C code to help me with full overlay mobile navigation hero image text positioning. ![W3C](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp) 
+I used special HTML character from [Toptal](https://www.toptal.com/designers/htmlarrows/symbols/)
+I used auto prefixer 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+ 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+ 

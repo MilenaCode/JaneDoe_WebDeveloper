@@ -44,7 +44,7 @@ body{
     background-size: cover;
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  z-index:2;}
+     z-index:2;}
   
   /* Position the content inside the overlay */
   .overlay-content {
@@ -71,7 +71,7 @@ body{
 
   
   /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
+  .overlay a:hover, .overlay a:focus, .overlay a.active {
     color: #010101;
     border-bottom:3px double #000;
     border-radius: 5px;
@@ -403,7 +403,7 @@ height: calc(70vh - 140px);
 .contact-wrap{
   position: relative;
   margin:10px 0px 0; 
-  
+  overflow:hidden;
    background-color: rgba(197, 198, 197, .5); 
    padding-bottom:20px;
   }
@@ -465,7 +465,7 @@ color:#555;}
 
   
     @media screen and (min-width:768px){
-      
+      body{padding:0 80px 150px;}
       /* services desktop */
       #services {display:flex;}
       #services div {
@@ -475,7 +475,7 @@ color:#555;}
       /* about desktop */
     
          
-        #about-text, #about-img {
+      #about-text, #about-img {
          
           width: 50% !important;
           float: left;
@@ -510,13 +510,12 @@ color:#555;}
     
           }
         
-            footer{clear:both;}  
+            footer{clear:both; 
+            width:calc(100% - 160px);}  
             
             .contact-wrap{
             
-              margin:10px 80px 0; 
-              
-            
+              margin-top:10px; 
               }
             
             .contact-form{

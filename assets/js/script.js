@@ -11,6 +11,7 @@ function toggleNav() {
       x.style.height = "100%";
       menuBtn.classList.add('open');
       menuOpen = true;
+
     }
   
   }
@@ -34,3 +35,12 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Prevent redirecting after form submission
+
+  $('#contact-form').submit(function () {
+    sendContactForm();
+    return false;
+  });
+
+  function sendContactForm() {return false;}

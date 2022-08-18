@@ -56,7 +56,7 @@
      <!-- form -->
      
     
-            <form method="POST" action="https://milenacode.github.io/JaneDoe_WebDeveloper/index.html" class="contact-form">
+            <form method="POST" action="" class="contact-form" id="contact-form">
                 <h1>I'd love to hear from you! <i class="fas fa-heartbeat"></i></h1>
                 <h2>Next step is simple just fill in the form to enquire for price/more information.</h2>
                 <label for="fname">First Name</label>
@@ -80,7 +80,7 @@
                 <textarea id="message" name="message" rows="4" cols="50" class="textarea-input" placeholder="Your message">
                 </textarea>
                 
-                <input class="enquire-button" type="submit" value="Enquire now!">
+                <input class="enquire-button" type="submit" value="Enquire now!" onclick="sendContactForm()">
             </form>
             <br>
             <p id="hidden">Thanks for submitting the form, I will be in touch shortly.</p>
