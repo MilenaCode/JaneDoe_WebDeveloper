@@ -36,11 +36,3 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// Prevent redirecting after form submission
-
-  $('#contact-form').submit(function () {
-    sendContactForm();
-    return false;
-  });
-
-  function sendContactForm() {return false;}
